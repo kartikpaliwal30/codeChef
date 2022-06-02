@@ -4,14 +4,11 @@ using namespace std;
 int main(){
     int tt;
     cin>>tt;
-    while (tt--)
-    {
-        int x,y,counter=8,matchCount=0;cin>>x>>y;
-        while (x<y)
-        {
-            matchCount+=1;
-            x+=counter;
-        }
-        cout<<matchCount<<endl;
+    while(tt--){
+        int N,a,b,totTimeAtStart,totTimeAtEnd;
+        cin>>N>>a>>b;
+        totTimeAtStart = 2*(180+N);
+        totTimeAtEnd = a+b;
+        cout<<totTimeAtStart-totTimeAtEnd<<endl;
     }
 }
